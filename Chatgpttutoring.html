@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Junxian Tutoring — Personalised Maths Tuition (11+ to Sixth Form)</title>
+  <meta name="description" content="Personalised maths tutoring for ages 11+ to Sixth Form. Group classes £15/hr (5–6 students). One‑to‑one £40/hr. First lesson £30. 3+ years' experience; students progressed from B to A* in 3 months." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Calendly embed -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(10px); }
+    .star-rating { color: #f59e0b; } /* Amber color for stars */
+  </style>
+  <script>
+    const CALENDLY_URL = "https://calendly.com/junxiantutoring/30min"; // TODO: set your real Calendly scheduling URL
+
+    function openCalendly() {
+      if (window.Calendly && CALENDLY_URL && CALENDLY_URL.startsWith("http")) {
+        Calendly.initPopupWidget({ url: CALENDLY_URL });
+      } else {
+        alert("Calendly link not set yet. Please update CALENDLY_URL in the HTML.");
+      }
+      return false;
+    }
+    
+    function toggleGroupOptions() {
+      const options = document.getElementById('groupOptions');
+      options.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-br from-sky-50 via-white to-indigo-50 text-slate-800">
+  <!-- Header/Nav -->
+  <header class="sticky top-0 z-50 glass">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <a href="#home" class="text-xl sm:text-2xl font-extrabold tracking-tight">Junxian <span class="text-indigo-600">Tutoring</span></a>
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#services" class="hover:text-indigo-600">Services</a>
+          <a href="#pricing" class="hover:text-indigo-600">Pricing</a>
+          <a href="#results" class="hover:text-indigo-600">Results</a>
+          <a href="#reviews" class="hover:text-indigo-600">Reviews</a>
+          <a href="#booking" class="hover:text-indigo-600">Book</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </nav>
+        <a href="#booking" class="md:hidden inline-flex items-center px-3 py-2 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Book</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-12 sm:pt-24 sm:pb-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+            Personalised <span class="text-indigo-600">Maths Tutoring</span> — 11+ to Sixth Form
+          </h1>
+          <p class="mt-5 text-lg text-slate-600">
+            Group classes <strong>£15/hr</strong> (5–6 students) · One‑to‑one <strong>£40/hr</strong> · First lesson <strong>£30</strong>.
+            I tailor every lesson to your needs and the UK curriculum.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <button onclick="openCalendly()" class="px-5 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Book a Lesson</button>
+            <a href="mailto:junxiantutoring@gmail.com" class="px-5 py-3 rounded-xl bg-white border border-slate-200 shadow hover:bg-slate-50">Email me</a>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="aspect-[4/3] rounded-3xl bg-white shadow-xl border border-slate-100 p-6 flex items-center justify-center">
+            <div class="text-center">
+              <div class="text-7xl">📘</div>
+              <p class="mt-3 text-slate-700 font-semibold">Confident, Curriculum‑Aligned Support</p>
+              <p class="text-slate-600">KS3 · GCSE · A‑Level · 11+</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">About me</h2>
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            I'm a <strong>final‑year undergraduate in Mathematics</strong> and attended a <strong>grammar school for 7 years</strong>.
+            I'm deeply familiar with the UK curriculum and <strong>tailor lessons</strong> to each student's goals, pace, and learning style.
+          </p>
+        </div>
+        <div>
+          <div class="rounded-3xl bg-white shadow-xl border border-slate-100 p-6">
+            <h3 class="text-xl font-bold">Who I teach</h3>
+            <p class="mt-3 text-slate-700">All ages from <strong>11+</strong> to <strong>Sixth Form</strong>.</p>
+            <button onclick="openCalendly()" class="mt-6 w-full px-5 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Book your first lesson (£30)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 sm:py-20 bg-white/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-center">Services</h2>
+      <p class="mt-3 text-center text-slate-600 max-w-2xl mx-auto">I offer tailored tuition across key stages — whether preparing for grammar school entrance, securing strong GCSE results, or aiming for top A‑Level grades.</p>
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <h3 class="text-xl font-bold text-indigo-600">11+ Tuition</h3>
+          <p class="mt-3 text-slate-700">Preparation for grammar school entrance exams with focus on problem‑solving, reasoning, and exam confidence. Build strong foundations early.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <h3 class="text-xl font-bold text-indigo-600">GCSE Tuition</h3>
+          <p class="mt-3 text-slate-700">Expert tuition in <strong>Maths and Sciences</strong>. Clear explanations, exam‑style practice, and strategies to move up grades quickly.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <h3 class="text-xl font-bold text-indigo-600">A‑Level Tuition</h3>
+          <p class="mt-3 text-slate-700">Advanced tuition for <strong>Biology, Maths, and Further Maths</strong>. Tailored lessons that target tricky topics and sharpen exam technique to help you secure top grades.</p>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <p class="text-lg text-slate-700">Whatever your stage, I’ll help you build confidence, close knowledge gaps, and achieve the results you’re aiming for.</p>
+        <button onclick="openCalendly()" class="mt-6 px-6 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Book a Lesson Today</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-center">Pricing</h2>
+      <p class="mt-3 text-center text-slate-600">Simple, transparent rates — first lesson discounted to <strong>£30</strong>.</p>
+      <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <p class="text-sm font-semibold text-indigo-600">Group (5–6 students)</p>
+          <h3 class="mt-2 text-3xl font-extrabold">£15<span class="text-base font-semibold text-slate-500">/hour</span></h3>
+          <button onclick="toggleGroupOptions()" class="mt-6 w-full px-5 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Request a group class</button>
+          <div id="groupOptions" class="hidden mt-4 p-4 bg-slate-50 rounded-lg">
+            <p class="text-sm text-slate-700 mb-2">Contact me directly to arrange group classes:</p>
+            <div class="flex flex-col gap-2">
+              <a href="mailto:junxiantutoring@gmail.com?subject=Group%20Class%20Request&body=Hello%20Junxian,%20I%20would%20like%20to%20request%20a%20group%20class.%20Here%20are%20my%20details:" class="px-4 py-2 text-center rounded-lg bg-white border border-indigo-300 text-indigo-700 hover:bg-indigo-50">Email Request</a>
+              <a href="tel:+447999761355" class="px-4 py-2 text-center rounded-lg bg-white border border-indigo-300 text-indigo-700 hover:bg-indigo-50">Call: 07999761355</a>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-3xl border-2 border-indigo-600 bg-white shadow-lg p-6">
+          <p class="text-sm font-semibold text-indigo-600">One‑to‑One</p>
+          <h3 class="mt-2 text-3xl font-extrabold">£40<span class="text-base font-semibold text-slate-500">/hour</span></h3>
+          <button onclick="openCalendly()" class="mt-6 w-full px-5 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Book 1‑to‑1</button>
+          <p class="mt-3 text-center text-sm text-slate-600">First lesson only <strong>£30</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results" class="py-16 sm:py-20 bg-white/60">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-center">Results you can trust</h2>
+      <p class="mt-4 text-slate-700 text-center max-w-3xl mx-auto">Over the past <strong>3+ years</strong>, I've helped students make rapid progress — including going from a <strong>grade B to A*</strong> in just <strong>3 months</strong>.</p>
+      <div class="mt-6 grid md:grid-cols-3 gap-4 text-center">
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <p class="text-4xl font-extrabold">3+</p>
+          <p class="text-sm text-slate-600">Years tutoring</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <p class="text-4xl font-extrabold">11+ → A‑Level</p>
+          <p class="text-sm text-slate-600">All stages covered</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-5">
+          <p class="text-4xl font-extrabold">B → A*</p>
+          <p class="text-sm text-slate-600">In 3 months</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-center">What students and parents say</h2>
+      <p class="mt-3 text-center text-slate-600 max-w-2xl mx-auto">Don't just take my word for it — here's feedback from those I've tutored.</p>
+      
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <div class="star-rating text-xl">★★★★★</div>
+          <p class="mt-3 text-slate-700 italic">"Junxian helped my daughter improve from a grade 6 to a grade 9 in GCSE Maths in just one term. His explanations are clear and he's very patient."</p>
+          <div class="mt-4 flex items-center">
+            <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">S</div>
+            <div class="ml-3">
+              <p class="text-sm font-semibold">Sarah's Mum</p>
+              <p class="text-xs text-slate-500">GCSE Maths</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <div class="star-rating text-xl">★★★★★</div>
+          <p class="mt-3 text-slate-700 italic">"I was struggling with A-Level Maths but after just a few sessions with Junxian, complex topics started making sense. My mock results improved dramatically."</p>
+          <div class="mt-4 flex items-center">
+            <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">J</div>
+            <div class="ml-3">
+              <p class="text-sm font-semibold">James</p>
+              <p class="text-xs text-slate-500">A-Level Maths</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="rounded-3xl border border-slate-200 bg-white shadow-sm p-6">
+          <div class="star-rating text-xl">★★★★★</div>
+          <p class="mt-3 text-slate-700 italic">"The group classes are fantastic value. My son looks forward to his maths sessions now and his confidence has grown enormously. Highly recommend!"</p>
+          <div class="mt-4 flex items-center">
+            <div class="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold">M</div>
+            <div class="ml-3">
+              <p class="text-sm font-semibold">Mrs. Thompson</p>
+              <p class="text-xs text-slate-500">11+ Preparation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-10 text-center">
+        <button onclick="openCalendly()" class="px-6 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Join Our Success Stories</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-16 sm:py-20 bg-white/60">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Book a lesson</h2>
+      <p class="mt-3 text-slate-700">Use my Calendly to pick a time that suits you. If you can't find a suitable slot, email or call/text me and I'll try to accommodate.</p>
+      <button onclick="openCalendly()" class="mt-6 px-6 py-3 rounded-xl bg-indigo-600 text-white shadow hover:bg-indigo-700">Open Calendly</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 sm:py-20">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-2xl sm:text-3xl font-extrabold">Get in touch</h2>
+      <p class="mt-3 text-slate-700">📧 <a href="mailto:junxiantutoring@gmail.com" class="underline decoration-indigo-300 underline-offset-4 hover:text-indigo-700">junxiantutoring@gmail.com</a></p>
+      <p class="mt-2 text-slate-700">📱 <a href="tel:+447999761355" class="underline decoration-indigo-300 underline-offset-4 hover:text-indigo-700">07999761355</a></p>
+    </div>
+  </section>
+
+  <footer class="py-10 bg-white/60">
+    <div class="max-w-6xl mx-auto px-4 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Junxian Tutoring. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#pricing" class="hover:text-indigo-700">Pricing</a>
+        <a href="#booking" class="hover:text-indigo-700">Book</a>
+        <a href="mailto:junxiantutoring@gmail.com" class="hover:text-indigo-700">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
